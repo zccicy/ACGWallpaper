@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_path_to_storage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="10sp" >
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_change_dir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="改变目录"
+         />
+
+</LinearLayout>

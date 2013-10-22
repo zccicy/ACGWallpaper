@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <greendroid.widget.AsyncImageView
+        android:id="@+id/ivAppIcon"
+        android:layout_width="fill_parent"  
+        android:layout_height="150dp"
+       
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
