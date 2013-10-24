@@ -1,58 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/pb_page" 
-    xmlns:greendroid="http://schemas.android.com/apk/res/com.beatrich.acgwallpaper" >
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:greendroid="http://schemas.android.com/apk/res/com.beatrich.acgwallpaper">
 
-    <greendroid.widget.PageIndicator
-        android:id="@+id/page_indicator_prev"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|left"
-        greendroid:dotType="multiple"
-        greendroid:gravity="left"
-        android:paddingBottom="10dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:paddingTop="25dp" />
+	<greendroid.widget.PageIndicator
+		android:id="@+id/page_indicator_prev" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="bottom|left"
+		greendroid:dotType="multiple" greendroid:gravity="left"
+		android:paddingBottom="10dp" android:paddingLeft="15dp"
+		android:paddingRight="15dp" android:paddingTop="25dp" />
 
-    <greendroid.widget.PageIndicator
-        android:id="@+id/page_indicator_next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"
-        greendroid:dotType="multiple"
-        greendroid:gravity="right"
-        android:paddingBottom="10dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:paddingTop="25dp" />
+	<greendroid.widget.PageIndicator
+		android:id="@+id/page_indicator_next" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="bottom|right"
+		greendroid:dotType="multiple" greendroid:gravity="right"
+		android:paddingBottom="10dp" android:paddingLeft="15dp"
+		android:paddingRight="15dp" android:paddingTop="25dp" />
 
-    <greendroid.widget.PageIndicator
-        android:id="@+id/page_indicator_other"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top|center_horizontal"
-        android:paddingTop="10dp" />
+	<greendroid.widget.PageIndicator
+		android:id="@+id/page_indicator_other" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="top|center_horizontal"
+		android:paddingTop="10dp" />
+	<greendroid.widget.PagedView
+		xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/pv_manage"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+	</greendroid.widget.PagedView>
+	<TextView android:id="@+id/tv_page_num" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="bottom|center"
+		android:text="第0页" android:textColor="#ffffff" android:textSize="15sp" />
 
-    <greendroid.widget.PagedView 
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/pv_manage" android:background="@drawable/pb_page" 
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-       
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:paddingTop="70dp"
-        android:paddingBottom="20dp"
-         >
-    </greendroid.widget.PagedView>
 
-    <TextView
-        android:id="@+id/tv_page_num"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:text="第0页"
-        android:textColor="#ffffff"
-        android:textSize="15sp" />
+
 
 </merge>
